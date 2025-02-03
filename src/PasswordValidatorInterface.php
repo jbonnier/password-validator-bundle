@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Jblab\PasswordValidatorBundle\Exception;
+namespace Jblab\PasswordValidatorBundle;
 
-class PasswordNumberException extends PasswordValidationException
+interface PasswordValidatorInterface
 {
+    public function validate(string $password, bool $throwException = false);
 }
