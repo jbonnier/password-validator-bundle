@@ -13,7 +13,6 @@ jobs:
     uses: jblab/.github/.github/workflows/phpunit.yaml@main
     with:
       publish-summary: true
-      phpunit-lowest-fix: 9.6.13
 
   phplint:
     uses: jblab/.github/.github/workflows/phplint.yaml@main
